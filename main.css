@@ -1,37 +1,47 @@
-.box{
-    width: 600px;
-    height: 600px;
-    background: purple;
-    margin: auto;
-        /*CSS裡將物件置中到視窗中央的方法*/
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
 }
-.box2{
-    width: 500px;
-    height: 500px;
-    background: blue;
-    margin: auto;
+.container1, .container2, .container3, .container4 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.box3{
-    width: 400px;
-    height: 400px;
-    background: green;
-    margin: auto;
+.container3, .container4 {
+    justify-content: space-around;
 }
-.box4{
-    width: 300px;
-    height: 300px;
-    background: yellow;
-    margin: auto;
+.container1 {
+    background-color: gray;
+    justify-content: center;
 }
-.box5{
+.container2 {
+    justify-content: space-between;
+}
+.container3 {
+    background-color: gray;
+}
+.container4 {
+    flex-direction: row-reverse;
+}
+.box1, .box2, .box3, .box4 {
     width: 200px;
-    height: 200px;
-    background: orange;
-    margin: auto;
-}
-.box6{
-    width: 100px;
     height: 100px;
-    background: red;
-    margin: auto;
+}
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: orange;
+}
+.box3 {
+    background-color: yellow;
+}
+.box4 {
+    background-color: green;
 }
